@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select</title>
+    <link rel="stylesheet" href="nwstyle.css">
+    <style>
+        
+    </style>
+    <script>
+        function get(){
+        if(document.getElementById("random").value=="ethenics"){
+        fetch('http://127.0.0.1:5000')  // Replace with the actual URL of your Flask app
+        .then(response => response.text())
+      .then(result => {
+        // Create a new <p> element
+        console.log(result)
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML=result;
+      })
+      .catch(error => {
+        // Handle any errors that occur during the fetch request
+        console.error(error);
+      });
+    }}
+   
+    
+    
+    
+    
+    
+    
+    
+        </script>
+</head>
+<body>
+    <div id="resultContainer">
+    <div id="header">
+    <div class="form">
+    <h1></h1>
+    
+    
+    <!-- <div class="form-ele">
+        <input type="file" name="image2" class="card-cta">
+    </div>
+    <div class="form-ele">
+        <input type="submit" value="Upload" class="card-cta">
+    </div> -->
+    
+</div>
+</div>
+</div>
+</body>
+</html>

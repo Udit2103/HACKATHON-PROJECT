@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select</title>
+    <link rel="stylesheet" href="nwstyle.css">
+    <script>
+        window.onload=function get(){
+        
+        fetch('http://127.0.0.1:8000')  // Replace with the actual URL of your Flask app
+        .then(response => response.text())
+      .then(result => {
+        // Create a new <p> element
+        console.log(result)
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML=result;
+      })
+      .catch(error => {
+        // Handle any errors that occur during the fetch request
+        console.error(error);
+      });
+    }
+   
+        </script>
+    <style>
+        body{
+            padding-top: 15%;
+        }
+        li{
+            padding: 10px;
+        }
+        ul{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body align="center" style="color:white;">
+    <div id="resultContainer"></div>
+</body>
+</html>

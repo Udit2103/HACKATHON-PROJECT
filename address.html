@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Address Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      /* background-color: #f5f5f5; */
+      font-weight: bold;
+      margin: 0;
+      padding: 20px;
+      background-image: url("yy.png");
+      /* filter: blur(5px); */
+      background-size: 100%;
+      
+    }
+    
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .address-form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffffd1;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .address-form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .address-form-container input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    
+    .address-form-container button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .address-form-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="address-form-container">
+    <h1>Address Form</h1>
+    
+    <form>
+      <label for="address1">Address Line 1:</label>
+      <input type="text" id="address1" name="address1" placeholder="Enter address line 1" required>
+      
+      <label for="address2">Address Line 2:</label>
+      <input type="text" id="address2" name="address2" placeholder="Enter address line 2">
+      
+      <label for="pincode">Pin Code:</label>
+      <input type="text" id="pincode" name="pincode" placeholder="Enter pin code" required>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" placeholder="Enter city" required>
+      
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" placeholder="Enter state" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
